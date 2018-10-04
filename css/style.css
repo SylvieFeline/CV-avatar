@@ -1,0 +1,143 @@
+@font-face
+{
+    font-family:"Quicksand";
+    src : url('Quicksand-Regular.otf');
+}
+
+
+img
+{
+   /* centrer l'image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* redimensionner l'image */
+    width: 200px;
+    height: 200px;
+    /* ombre en bas et à droite */
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Roboto';
+    text-decoration: underline;
+}
+
+h2
+{
+    /* cadre contour rouge, fond orange foncé, police blanche, 32px, Quicksand */
+    border: 2px red solid;
+    background-color: rgb(200,100,0);
+    color : white;
+    font-size: 32px;
+    font-family: 'Quicksand';
+    /* 80 px au dessus, 40 px en dessous, 20 px de chaque coté */
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ol
+{
+    /* trait de 3 px bleu foncé a gauche  */
+    border-left: 3px solid darkblue;
+    margin-left: 50px;
+}
+
+li
+{
+    /* liste à 35px du trait */
+    margin-left: 35px;
+}
+
+ul
+{
+    /* puces carrées, alignée à droite */
+    list-style-type: square;
+    text-align: right;
+}
+
+#tableau
+{
+    /*  80px de chaque coté */
+    /* padding-right: 80px; */
+    /* padding-left: 80px; */
+    margin: 80px;
+}
+
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th
+{
+    /* contour du tableau 1px */
+    border : 1px solid black;
+}
+
+th
+{
+    /* titres centrés, 20px, gras */
+    text-align: center;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td
+{
+    /* ligne de 50px de hauteur, texte aligné à droite, 14px */
+    height: 50px;
+    text-align: right;
+    font-size: 14px;
+}
+
+   /* colonne du tableau de largeur différente */
+.col1
+{
+    width: 100px;
+}
+
+.col2
+{
+    width: 200px;
+}
+
+.col3
+{
+    /* flex: 1; */
+    width: auto;
+}
+
+p
+{
+    margin-left: 50px;
+}
+
+strong
+{
+    color: blue;
+}
+
+em
+{
+    color: chocolate;
+}
+
+/* pied de page toujours en bas de la fenêtre et sur toute la largeur */
+
+footer
+{
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    background-color: white;
+}
