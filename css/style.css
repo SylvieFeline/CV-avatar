@@ -1,16 +1,35 @@
 @font-face
 {
     font-family:"Quicksand";
-    src : url('Quicksand-Regular.otf');
+    src: url(../polices/Quicksand-Regular.otf);
 }
-
+body{
+    background-color: rgb(46, 46, 110);
+    padding:0; 
+}
+#blocPage{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(126, 181, 233);
+    
+}
+   /* ---------------------header -------------------------- */
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top:0;
+    background-image:linear-gradient( rgb(46, 46, 110), rgb(162, 85, 235), rgb(46, 46, 110));
+}
 
 img
 {
    /* centrer l'image */
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     /* redimensionner l'image */
     width: 200px;
     height: 200px;
@@ -18,62 +37,70 @@ img
     box-shadow: 2px 2px 2px black;
     border-radius: 50%;
 }
-
+  
 h1
 {
     text-align: center;
-    font-size: 48px;
-    font-family: 'Roboto';
-    text-decoration: underline;
+    font-size: 80px;
+    font-family: 'Dancing Script';
+    
+    
+    /* font-family: 'Roboto'; */
+    /* text-decoration: underline; */
 }
-
+/* ------------------------------titres-------------------------- */
 h2
 {
-    /* cadre contour rouge, fond orange foncé, police blanche, 32px, Quicksand */
-    border: 2px red solid;
-    background-color: rgb(200,100,0);
+    /* cadre contour , fond , police blanche, 32px, Quicksand */
+    /* border: 2px white solid; */
+    background-image: linear-gradient(to right, rgb(46, 46, 110), rgb(126, 181, 233));
     color : white;
     font-size: 32px;
     font-family: 'Quicksand';
     /* 80 px au dessus, 40 px en dessous, 20 px de chaque coté */
-    margin-top: 80px;
-    margin-bottom: 40px;
-    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
     margin-right: 20px;
+    padding-left: 30px;
 }
-
+/* ----------------------    listes   ------------------- */
 ol
 {
-    /* trait de 3 px bleu foncé a gauche  */
-    border-left: 3px solid darkblue;
-    margin-left: 50px;
+    /* trait de 3 px bleu a gauche  */
+    /* border-left: 3px solid rgb(85, 85, 230); */
+    margin-left: 30px;
 }
 
 li
 {
     /* liste à 35px du trait */
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 ul
 {
     /* puces carrées, alignée à droite */
     list-style-type: square;
-    text-align: right;
+    margin-left: 30px;
+    /* text-align: right; */
 }
-
+/* -----------------------tableau--------------------------- */
 #tableau
 {
     /*  80px de chaque coté */
     /* padding-right: 80px; */
     /* padding-left: 80px; */
-    margin: 80px;
+    margin: 20px 80px;
+    
 }
 
 
 table
 {
+    border: 3px solid rgb(85, 85, 230);
     border-collapse: collapse;
+    
     width: 100%;
 }
 
@@ -81,6 +108,7 @@ td, th
 {
     /* contour du tableau 1px */
     border : 1px solid black;
+
 }
 
 th
@@ -91,13 +119,19 @@ th
     font-size: 20px;
     font-weight: bold;
 }
-
-td
-{
-    /* ligne de 50px de hauteur, texte aligné à droite, 14px */
+td{
     height: 50px;
-    text-align: right;
     font-size: 14px;
+}
+
+td.col1,  td.col2{
+    text-align: center;
+}
+
+td.col3
+{
+    text-align: right;
+
 }
 
    /* colonne du tableau de largeur différente */
@@ -121,23 +155,93 @@ p
 {
     margin-left: 50px;
 }
+/* ---------------phrases fétiches ------------------- */
+#phrase_fetiche p{
+    text-align: center;
+    font-family: 'Dancing Script';
+}
 
 strong
 {
-    color: blue;
+    color: rgb(240, 240, 145);
+    text-transform: uppercase;
+    font-family: 'Quicksand';
+    font-style: oblique;
 }
 
 em
 {
-    color: chocolate;
+    color: blue;
+}
+/* ---------------- formulaire contact------------------ */
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 40px;
+    
+}
+::placeholder{
+    font-family: 'Dancing Script';
+}
+form input{
+    margin-bottom: 10px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+#sexe{
+    display: flex;
+    
+}
+#couleur{
+   margin-bottom: 5px;
+}
+.bleu{ color: blue;}
+.vert{color: green;}
+.jaune{color: yellow;}
+.orange{color: rgb(255, 96, 5);}
+.rouge{color: red;}
+.violet{color: purple;}
+
+select{
+    margin-bottom: 10px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+textarea{
+    margin-bottom: 10px;
+    height: 100px;
+    resize: none;
+    font-family: 'Dancing Script';
+    border-radius: 20px;
+    padding-left: 20px;
 }
 
-/* pied de page toujours en bas de la fenêtre et sur toute la largeur */
+input[type=submit]{
+    background-image:linear-gradient(rgb(46, 46, 110),white,rgb(46, 46, 110));
+    width: 20%;
+    margin: auto;
+    line-height: 30px;
+    /* border:none; */
+    color: rgb(46, 46, 110);
+}
 
+/* ----------------   pied de page ---------------- */
+/* pied de page toujours en bas de la fenêtre et sur toute la largeur */
 footer
 {
-    position: sticky;
-    bottom: 0;
+    /* position: sticky; */
+    /* bottom: 0; */
+    display: flex;
     text-align: center;
-    background-color: white;
+    background-image:linear-gradient(rgb(162, 85, 235),rgb(46, 46, 110));
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+footer p{
+    margin: 0;
 }

@@ -3,19 +3,22 @@
   <html lang="FR">
 
     <head>
-				<meta charset="utf-8"/> 
-				<link rel="stylesheet" href="css/style.css">
-				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<title> CV Avatar </title>
+		<meta charset="utf-8"/> 
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Charmonman|Cookie|Dancing+Script|Great+Vibes" rel="stylesheet">
+		<title> CV Avatar </title>
     </head>
    
     <body>
-  
-        <header>
-	  <img src="images/Avatar_Licorne_mini.png" alt="avatar"/>
-	  <h1> Sylvie Féline </h1>
-        </header>
 
+	<div id="blocPage">
+  <!-- ------------------------------------------------------ -->
+        <header>
+			<img src="images/Avatar_Licorne_mini.png" alt="avatar"/>
+			<h1> Sylvie Féline </h1>
+        </header>
+<!-- ------------------------------------------------------ -->
 	<div id="objectifs">
 		
 		<h2> Mes objectifs </h2>
@@ -25,7 +28,7 @@
 		     <li> Développer des applications mobiles </li>
 		  </ol>
 	</div>
-
+<!-- ------------------------------------------------------ -->
 	<div id="formations">
 
 		<h2> Mes formations </h2>
@@ -33,11 +36,12 @@
 		   <ul>
 		     <li> Certification Google fondamentaux du marketing digital </li>
 		     <li> Certificat Openclassrooms HTML et CSS </li>
-		     <li> Certificat Openclassrooms PHP et MySQL </li>
+			 <li> Certificat Openclassrooms PHP et MySQL </li>
+			 <li> Certificat Openclassrooms JavaScript </li>
 		  </ul>
 
 	</div>
-
+<!-- ------------------------------------------------------ -->
 	<div id="experiences">
 
 		<h2> Mes expériences </h2>
@@ -64,23 +68,61 @@
 				</table>
 			</div>
 	</div>
-
+<!-- ------------------------------------------------------ -->
 	<div id="phrase_fetiche">
 
 		<h2> Ma phrase fétiche </h2>
 
-		  <p> Je n'ai pas encore de <strong>phrase fétiche</strong> donc je ne sais pas quoi mettre dans ce paragraphe ! </p>
-		  <p> Et je ne sais pas non plus quoi écrire pour compléter ce paragraphe.<br /> 
-		      Je vais peut-être me mettre au latin <em>(lorem ipsum ...)</em> ! </p>
+		<p> J'étais <strong>blonde</strong> quand j'étais petite ! </p>
+		<p> <em> J'apprend vite, mais il faut m'expliquer longtemps !</em>  </p>
 
-         </div>
+	</div>
+<!-- ------------------------------------------------------  -->
+	<div id="contact">
+		<h2> Me contacter</h2>
 
+		<form method="post" action="contact.php">
+			Nom : <input type="text" name="nom" placeholder="saisissez votre nom ici">
+			Prénom : <input type="text" name="prenom" placeholder="saisissez votre prénom ici">
+			Date de naissance : <input type="date" name="naissance" >
+			Email : <input type="email" name="mail" placeholder="saisissez votre adresse mail ici">
+			N° de téléphone : <input type="tel" name="usrtel" placeholder="00000000">
+			<div id="sexe">
+				<input type="radio" name="sexeM" value="masculin"> masculin 
+				<input type="radio" name="sexeF" value="feminin"> féminin 
+			</div>
+			<div id="couleur">
+				Quelles sont vos couleurs préférées ?
+				<input type="checkbox" name="bleu" value="bleu"><span class="bleu">bleu</span>
+				<input type="checkbox" name="vert" value="vert"><span class="vert">vert</span>
+				<input type="checkbox" name="jaune" value="jaune"><span class="jaune">jaune</span>
+				<input type="checkbox" name="orange" value="orange"><span class="orange">orange</span>
+				<input type="checkbox" name="rouge" value="rouge"><span class="rouge">rouge</span>
+				<input type="checkbox" name="violet" value="violet"><span class="violet">violet</span>
+			</div>
+			Sujet du message :
+			<select name="sujet">
+				<option value="rendezVous">Prendre un rendez-vous</option>
+				<option value="renseignement">Avoir des informations supplémentaires</option>
+				<option value="commentaire">Faire un commentaire</option>
+				<option value="autre">Autre raison</option>
+			</select>
+			Votre message :
+			<textarea>saisissez votre message ici</textarea>
+			<input type="submit" value="Envoyer" >
+		</form>
+	</div>	 
+<!-- ------------------------------------------------------ -->
     <footer>
-	<p>créé par Sylvie Féline des "D codeurs du Lac", le 1er octobre 2018 </p>
-	<p> Mise à jour avec le CSS le 4 octobre 2018</p>
-	<a href="https://github.com/SylvieFeline" target="_blank"> Mon GitHub </a>
+		<div id="maj">
+			<p>créé par Sylvie Féline des "D codeurs du Lac"  -  1er octobre 2018 </p>
+			<p> Ajout du CSS  -  4 octobre 2018</p>
+			<p> Ajout d'un formulaire de contact et modification du CSS - 19 et 21 octobre 2018</p>
+		</div>
+		<a href="https://github.com/SylvieFeline" target="_blank"> Mon GitHub </a>
 
     </footer>
+</div>	
 
   </body>
 
